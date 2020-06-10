@@ -16,12 +16,10 @@ describe('BFS', () => {
   });
 
   test('Should give true if node connected to itself', () => {
-    expect(bfs(pairs)).toBeFalsy();
     expect(bfs(pairs, 'aa', 'aa')).toBeTruthy();
   });
 
   test('Should give false if single node not connected to itself', () => {
-    expect(bfs(pairs)).toBeFalsy();
     expect(bfs(pairs, 'mm', 'mm')).toBeFalsy();
   });
 });
