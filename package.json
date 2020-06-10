@@ -1,0 +1,22 @@
+{
+  "name": "graph-shiviraj",
+  "version": "1.0.0",
+  "description": "",
+  "main": "bfs.js",
+  "scripts": {
+    "test": "jest --coverage"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/step-batch-7/graph-shiviraj.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/step-batch-7/graph-shiviraj/issues"
+  },
+  "homepage": "https://github.com/step-batch-7/graph-shiviraj#readme",
+  "devDependencies": {
+    "jest": "^26.0.1"
+  }
+}
