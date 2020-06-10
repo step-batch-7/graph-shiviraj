@@ -7,7 +7,6 @@ const createGraph = (pairs) => {
 };
 
 const bfs = function (pairs, source, target) {
-  if (!source || !target) return false;
   const graph = createGraph(pairs);
   if (source == target && !graph[source].includes(target)) return false;
   const queue = [source];

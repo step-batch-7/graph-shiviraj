@@ -10,11 +10,6 @@ describe('BFS', () => {
     expect(bfs(pairs, 'mm', 'jj')).toBeFalsy();
   });
 
-  test('Should give false if source and target not provided', () => {
-    expect(bfs(pairs)).toBeFalsy();
-    expect(bfs(pairs, 'mm')).toBeFalsy();
-  });
-
   test('Should give true if node connected to itself', () => {
     expect(bfs(pairs, 'aa', 'aa')).toBeTruthy();
   });
