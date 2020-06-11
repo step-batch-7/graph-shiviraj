@@ -8,14 +8,14 @@ const createGraph = (pairs) => {
 
 const bfs = function (pairs, source, target) {
   const graph = createGraph(pairs);
-  if (source == target && !graph[source].includes(target)) return false;
   const queue = [source];
   const visited = [];
   while (queue.length) {
     const nodeToVisit = queue.shift();
-    if (graph[nodeToVisit].includes(target)) return true;
+    const nodes = graph[nodeToVisit] || [];
+    if (nodes.includes(target)) return true;
     visited.push(nodeToVisit);
-    graph[nodeToVisit].forEach((node) => {
+    nodes.forEach((node) => {
       if (!visited.includes(node) && !queue.includes(node)) queue.push(node);
     });
   }
